@@ -1,12 +1,19 @@
 #pragma once
+
+#include "Core.h"
+
 namespace Accelerator {
 
-	class Application {
+	class ACCELERATOR_API Application {
 	public:
 		Application();
 		virtual ~Application();
+
 		void Run();
 	};
+
+	// Define in client
+	Application* CreateApplication();
 
 }
 
